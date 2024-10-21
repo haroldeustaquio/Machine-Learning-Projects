@@ -5,4 +5,3 @@ structure_classification.ipynb
 data/
 catboost_info/
 *.csv
-clustering/
