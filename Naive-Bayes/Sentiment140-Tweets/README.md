@@ -1,4 +1,4 @@
-# Sentiment Analysis on 1,600,000 tweets
+# Sentiment Classification on 1,600,000 tweets
 
 ## About Dataset
 The **Sentiment140** dataset consists of 1,600,000 tweets extracted using the Twitter API. These tweets have been annotated with sentiment labels (0 = negative, 4 = positive) and can be used for sentiment analysis tasks.
