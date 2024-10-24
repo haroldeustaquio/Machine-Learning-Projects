@@ -27,13 +27,6 @@ The key variables included are:
 
 ---
 
-## How to Run the Project
-1. Install the required libraries.
-2. Download the dataset or place the CSV file in the `data` folder.
-3. Run the code provided to clean the data, train the models, and evaluate the performance.
-
----
-
 ## Models Used
 - **Linear Regression**: A simple linear model for prediction.
 - **Lasso Regression**: A regularized model that reduces overfitting.
