@@ -2,6 +2,8 @@
 
 This project aims to experiment with various Machine Learning (ML) models to detect fake news. We will use different classification algorithms and techniques to determine their effectiveness in identifying false information from textual data.
 
+---
+
 ## Project Overview
 
 - **Objective**: Test and compare the performance of different ML models in fake news detection.
@@ -9,10 +11,7 @@ This project aims to experiment with various Machine Learning (ML) models to det
 - **Models**: Includes models such as Logistic Regression, Decision Trees, Naive Bayes, and SVM.
 - **Evaluation**: Model performance will be evaluated based on accuracy, precision, recall, and F1-score.
 
-## Project Structure
-
-- `data/`: Contains the dataset used for training and testing.
-- `testing.ipynb`: Jupyter notebooks for experimentation with different models.
+---
 
 ## Structure of `testing.ipynb`
 

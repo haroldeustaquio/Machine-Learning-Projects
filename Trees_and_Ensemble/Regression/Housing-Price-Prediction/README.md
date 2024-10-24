@@ -1,46 +1,44 @@
 # Boston Housing Price Prediction with Decision Trees and Ensemble Methods
 
-This repository contains a project that predicts housing prices in the Boston area using Decision Tree Regression and various ensemble methods. The project includes data preprocessing, model training, hyperparameter tuning using GridSearchCV, and evaluation of the performance of multiple models, including Decision Tree Regressor, Random Forest, Bagging Regressor, AdaBoost, Gradient Boosting, and XGBoost.
+This project focuses on predicting housing prices in the Boston area using Decision Tree Regression and various ensemble methods. The dataset used for this project is from the following source:
+
+Dataset source: [Boston Housing dataset](https://www.kaggle.com/datasets/arslanali4343/real-estate-dataset)
+
+---
 
 ## Project Overview
 
-This project focuses on predicting the median value of owner-occupied homes (`MEDV`) in the Boston area. While Decision Tree Regressor is one of the models used, the project also explores ensemble methods to improve the predictive accuracy. Models such as Random Forest, Bagging, AdaBoost, Gradient Boosting, and XGBoost are evaluated and compared.
+The goal of this project is to predict the median value of owner-occupied homes (`MEDV`) in the Boston area. Various models, including Decision Tree Regressor, Random Forest, Bagging Regressor, AdaBoost, Gradient Boosting, and XGBoost, are evaluated and compared to improve predictive accuracy.
 
-## Dataset
+---
 
-The dataset used in this project is the [Boston Housing dataset](https://www.kaggle.com/datasets/arslanali4343/real-estate-dataset), which includes various features such as crime rate, average number of rooms per dwelling, and more. The target variable (`MEDV`) represents the median value of owner-occupied homes in $1000s.
+## Data
 
-**Dataset Source:** The dataset is originally from the UCI Machine Learning Repository but can also be found in other machine learning libraries like `sklearn`.
+The dataset consists of the following features:
+- `CRIM`: Per capita crime rate by town.
+- `INDUS`: Proportion of non-retail business acres per town.
+- `NOX`: Nitric oxide concentration (parts per 10 million).
+- `RM`: Average number of rooms per dwelling.
+- `AGE`: Proportion of owner-occupied units built before 1940.
+- `DIS`: Weighted distances to five Boston employment centers.
+- `TAX`: Property tax rate per $10,000.
+- `PTRATIO`: Pupil-teacher ratio by town.
+- `B`: Proportion of the population that is African-American.
+- `LSTAT`: Percentage of lower status of the population.
+- `MEDV`: Median value of owner-occupied homes in $1000s (Target Variable).
 
-### Features in the Dataset
+---
 
-- **CRIM:** Per capita crime rate by town.
-- **INDUS:** Proportion of non-retail business acres per town.
-- **NOX:** Nitric oxide concentration (parts per 10 million).
-- **RM:** Average number of rooms per dwelling.
-- **AGE:** Proportion of owner-occupied units built before 1940.
-- **DIS:** Weighted distances to five Boston employment centers.
-- **TAX:** Property tax rate per $10,000.
-- **PTRATIO:** Pupil-teacher ratio by town.
-- **B:** Proportion of the population that is African-American.
-- **LSTAT:** Percentage of lower status of the population.
-- **MEDV:** Median value of owner-occupied homes in $1000s (Target Variable).
+## Results
 
-## Models Used
+| Model                        | RMSE       | MSE       | R²       |
+|------------------------------|------------|-----------|----------|
+| GradientBoostingRegressor     | 2.733306   | 7.470961  | 0.893313 |
+| AdaBoostRegressor             | 2.868019   | 8.225531  | 0.882538 |
+| Random Forest                 | 3.074958   | 9.455369  | 0.864976 |
+| Bagging Regressor            | 3.088889   | 9.541236  | 0.863749 |
+| XGBoost                      | 3.397740   | 11.544637 | 0.835141 |
+| DecisionTreeRegressor (default) | 3.449101   | 11.896299 | 0.830119 |
+| DecisionTreeRegressor with GridSearch | 4.244322 | 18.014272 | 0.742753 |
 
-This project evaluates multiple models to improve the prediction accuracy, including:
-
-- **DecisionTreeRegressor:** A simple decision tree model.
-- **Random Forest Regressor:** An ensemble method that builds multiple decision trees and averages their predictions.
-- **Bagging Regressor:** A model that reduces variance by training multiple trees on different subsets of data.
-- **AdaBoost Regressor:** A boosting method that combines weak learners to create a stronger model.
-- **Gradient Boosting Regressor:** Another boosting method that optimizes model performance iteratively.
-- **XGBoost:** An optimized implementation of gradient boosting that is often faster and more accurate.
-
-## Setup
-
-To run this project, you need to have Python installed along with the following libraries:
-
-- `pandas`
-- `scikit-learn`
-- `xgboost`
+The results indicate that the Gradient Boosting Regressor achieved the best performance, followed closely by the AdaBoost Regressor.

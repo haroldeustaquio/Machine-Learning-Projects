@@ -1,12 +1,19 @@
+"""
 # Titanic Survival Prediction using Logistic Regression
 
-## Context
+This project focuses on predicting whether a passenger survived the Titanic disaster using logistic regression. The dataset used for this project is from the following source:
+
+Dataset source: [Titanic Survival Prediction Dataset](https://www.kaggle.com/datasets/brendan45774/test-file)
+
+---
+
+## Project Overview
 
 The sinking of the Titanic was one of the deadliest maritime disasters in history, with over 1,500 passengers losing their lives. This dataset is designed to help predict whether a passenger survived the disaster based on various factors such as age, sex, class, and ticket fare.
 
-[Link to the dataset on Kaggle](https://www.kaggle.com/datasets/brendan45774/test-file)
+---
 
-## Dataset Information
+## Data
 
 The dataset contains the following columns:
 
@@ -25,6 +32,8 @@ The dataset contains the following columns:
 | Cabin         | Cabin number (if available)              |
 | Embarked      | Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton) |
 
-## Machine Learning Model: Logistic Regression
+---
 
-In this project, I used a **Logistic Regression** model to predict survival based on the available features. Here is the code snippet for training and making predictions:
+## Results
+
+The logistic regression model achieved a precision of **1.0**, indicating perfect classification of the positive class (survived passengers) in the test set. This suggests that all passengers predicted to have survived actually did survive, showcasing the model's effectiveness in this context.

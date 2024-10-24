@@ -25,14 +25,6 @@ The dataset consists of the following columns:
 
 ---
 
-## Models
-
-Two models were implemented in this project:
-1. **Linear Regression**
-2. **Lasso Regression**
-
----
-
 ## Results
 
 | Model              | RMSE         | MAPE   | R²       |
@@ -41,10 +33,3 @@ Two models were implemented in this project:
 | Lasso               | 6006.694553  | 0.430337 | 0.76893  |
 
 Both models performed similarly, with the Linear Regression model achieving slightly better performance in terms of RMSE and MAPE.
-
----
-
-## Conclusion
-
-The results show that both Linear Regression and Lasso models can predict personal insurance costs with an R² score of approximately 0.77. However, improvements can be made by exploring feature engineering or using more advanced models.
-

@@ -1,23 +1,20 @@
 # Sentiment Analysis of Airline Tweets
 
-## Dataset Description
+This project involves sentiment analysis of tweets related to major U.S. airlines. The data was scraped from Twitter in February 2015, where contributors were asked to classify tweets as positive, negative, or neutral, and further categorize negative reasons (e.g., "late flight," "rude service"). The dataset used for this project is from the following source:
 
-This project involves sentiment analysis of tweets related to major U.S. airlines. The data was scraped from Twitter in February 2015, where contributors were asked to classify tweets as positive, negative, or neutral, and further categorize negative reasons (e.g., "late flight," "rude service"). 
-
-The dataset provided on Kaggle includes a reformatted version of the original source, featuring both a CSV file and an SQLite database. The transformation code is available on GitHub.
+Dataset source: [Sentiment Airline Dataset](https://www.kaggle.com/code/sathishgsmss/sentiment-airline-dataset)
 
 ---
 
-## Dataset Access
+## Project Overview
 
-You can access the dataset [here](https://www.kaggle.com/code/sathishgsmss/sentiment-airline-dataset).
+The primary objective of this project is to analyze sentiments expressed in tweets about airlines to understand customer satisfaction and dissatisfaction. By utilizing machine learning techniques, we aim to predict sentiments accurately based on tweet content.
 
 ---
 
-### Dataset Format
+## Data
 
-The dataset contains the following columns:
-
+The dataset includes the following columns:
 - `tweet_id`: Unique identifier for each tweet.
 - `airline_sentiment`: Sentiment of the tweet (positive, negative, neutral).
 - `airline_sentiment_confidence`: Confidence score for the predicted sentiment.
@@ -38,8 +35,6 @@ The dataset contains the following columns:
 
 ## Results
 
-The following models were evaluated based on accuracy, precision, recall, and F1 score:
-
 | Model                            | Accuracy | Precision | Recall | F1 Score |
 |----------------------------------|----------|-----------|--------|----------|
 | Multinomial Balanced CountVect   | 0.7451   | 0.7483    | 0.7451 | 0.7453   |
@@ -47,16 +42,5 @@ The following models were evaluated based on accuracy, precision, recall, and F1
 | Multinomial CountVect            | 0.7549   | 0.7429    | 0.7549 | 0.7352   |
 | Multinomial Tfidf                | 0.6530   | 0.7284    | 0.6530 | 0.5476   |
 
----
+The **Multinomial Balanced CountVect** model achieved the highest accuracy and F1 score, indicating its effectiveness in handling the dataset. The performance of the **Tfidf** models was generally lower, suggesting that Count Vectorization may be more suitable for this dataset.
 
-### Key Observations
-
-- The **Multinomial Balanced CountVect** model achieved the highest accuracy and F1 score, indicating its effectiveness in handling the dataset.
-- The **Multinomial CountVect** model also performed well but showed lower precision and F1 scores compared to its balanced counterpart.
-- The performance of the **Tfidf** models was generally lower, suggesting that Count Vectorization may be more suitable for this dataset.
-
----
-
-## Conclusion
-
-This sentiment analysis project highlights the challenges and insights from analyzing tweets related to airlines. The balanced CountVect model demonstrates superior performance, underscoring the importance of proper data handling techniques in achieving reliable results in sentiment analysis tasks.
