@@ -1,7 +1,9 @@
 .venv/
 structure_regression.ipynb
 structure_classification.ipynb
-
+structure*.ipynb
 data/
 catboost_info/
 *.csv
+*.h5
+*.keras
