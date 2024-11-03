@@ -1,4 +1,4 @@
-# Linear Regression Mini-Projects
+# Linear Regression Projects
 
 This repository contains several mini-projects that apply regression models to various datasets. Each project demonstrates the application of these techniques to solve real-world problems.
 
