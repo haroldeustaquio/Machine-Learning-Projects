@@ -1,7 +1,13 @@
 # Beer Consumption Prediction
 
-## Project Description
+## Overview
 This project aims to predict beer consumption in liters using weather data and other variables. The dataset used contains daily information about temperature, precipitation, and whether the day was a weekend. Two regression models were applied: **Linear Regression** and **Lasso Regression**. The performance of both models was evaluated based on metrics like RMSE, MAPE, and R². Additionally, scatter plots and residual plots were generated for a better understanding of the predictions.
+
+**Content**
+
+- [Data]
+- [Proccess]
+
 
 ---
 
