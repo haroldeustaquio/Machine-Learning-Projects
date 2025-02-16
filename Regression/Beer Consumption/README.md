@@ -2,19 +2,18 @@
 
 ## Overview
 
-This project aims to predict beer consumption in liters using weather data and other variables. The dataset used contains daily information about temperature, precipitation, and whether the day was a weekend. Two regression models were applied: **Linear Regression** and **Lasso Regression**. The performance of both models was evaluated based on metrics like RMSE, MAPE, and R². Additionally, scatter plots and residual plots were generated for a better understanding of the predictions.
+This project aims to predict beer consumption in liters using weather data and other variables. The dataset contains daily information about temperature, precipitation, and whether the day was a weekend. By analyzing these factors, we can gain insights into the patterns and trends that influence beer consumption.
 
 **Content**
 
-- [Data Description]
-- [Results]
-- [Conclusion]
+- [Data Description](#data-description)
+- [Requirements](#requirements)
+- [Conclusion](#conclusion)
 
 ---
 
 ## Data Description
-The dataset used for this project was obtained from the following source:  
-[Beer Consumption in São Paulo](https://raw.githubusercontent.com/robintux/Datasets4StackOverFlowQuestions/master/Consumo_cerveza_SP.csv).
+The dataset used for this project was obtained from the following source: [Beer Consumption in São Paulo](https://raw.githubusercontent.com/robintux/Datasets4StackOverFlowQuestions/master/Consumo_cerveza_SP.csv).
 
 The key variables included are:
 - **Temperatura Media (C)**: Average daily temperature.
@@ -27,25 +26,15 @@ The key variables included are:
 ---
 
 ## Requirements
-- pandas
-- matplotlib
-- seaborn
-- scikit-learn
+
+```bash
+pip install numpy pandas scikit-learn matplotlib scipy 
+```
 
 ---
 
-## Models Used
-- **Linear Regression**: A simple linear model for prediction.
-- **Lasso Regression**: A regularized model that reduces overfitting.
+## Conclusion
 
----
-
-## Results
-The performance metrics for both models are as follows:
-
-| Model              | RMSE     | MAPE     | R²       |
-|--------------------|----------|----------|----------|
-| Linear Regression   | 2.375179 | 0.081708 | 0.700741 |
-| Lasso               | 3.146019 | 0.107557 | 0.474977 |
-
-Linear Regression showed better performance compared to Lasso Regression, as reflected by the lower RMSE and higher R² values.
+- **Best realistic option:** **Gradient Boosting Pro or AdaBoost Pro**.
+- **Gradient Boosting Pro** is a powerful option with tuned hyperparameters.
+- **AdaBoost Pro** is more stable and less prone to overfitting.
