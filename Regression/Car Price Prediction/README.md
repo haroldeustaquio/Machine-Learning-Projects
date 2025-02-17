@@ -1,18 +1,27 @@
 # Car Price Prediction Project
 
+## Overview
+
 This project aims to predict car prices based on various features such as manufacturing year, selling price, kilometers driven, fuel type, and engine specifications. By leveraging multiple regression models, this project demonstrates the effectiveness of machine learning techniques in estimating car prices.
 
 - **Dataset Source**: [Car Price Prediction Dataset on Kaggle](https://www.kaggle.com/datasets/sukhmandeepsinghbrar/car-price-prediction-dataset)
 
+**Content**
+
+- [Data Description](#data-description)
+- [Requirements](#requirements)
+- [Conclusion](#conclusion)
+
+
 ---
 
-## Project Overview
+## Data Description
 
 The primary objective of this project is to develop predictive models that accurately estimate car selling prices based on given features. To achieve this, we employed several regression models and evaluated their performance using metrics such as R² (coefficient of determination) and RMSE (Root Mean Square Error).
 
 ---
 
-## Data
+## Requirements
 
 The dataset includes the following features:
 
@@ -31,7 +40,7 @@ The dataset includes the following features:
 
 ---
 
-## Model Evaluation
+## Conclusion
 
 The following regression models were implemented and assessed:
 
